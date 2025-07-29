@@ -17,13 +17,6 @@ function aVeryBigSum($ar)
 }
 
 
-$stdin = "5\n1000000001 1000000002 1000000003 1000000004 1000000005\n";
-
-
-$_fp = fopen("php://temp", "r+");
-fwrite($_fp, $stdin);
-rewind($_fp);
-
 $fptr = fopen("php://output", "w");
 
 $ar_count = intval(trim(fgets($_fp)));
